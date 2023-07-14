@@ -7,9 +7,9 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 from tensorflow.keras import regularizers
 num_classes=2
-train_dir=r'C:\Users\Acer\Desktop\data_work\70_15_15_1819\train'
-val_dir= r'C:\Users\Acer\Desktop\data_work\70_15_15_1819\val'
-test_dir=r'C:\Users\Acer\Desktop\data_work\70_15_15_1819\test'
+train_dir=r'\train'
+val_dir= r'\val'
+test_dir=r'\test'
 
 size=224
 batch_size=64
@@ -162,4 +162,4 @@ plt.title('Confusion Matrix - Validation')
 plt.show()
 #%%
 # Save the model for later use
-model.save(r'C:\Users\Acer\Desktop\DATAsets\ISIC2018\test_train_val\model_BsicCNN_00.h5')
+model.save(r'\model_BsicCNN_00.h5')
