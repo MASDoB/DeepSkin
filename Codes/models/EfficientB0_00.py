@@ -7,9 +7,9 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 from tensorflow.keras import regularizers
 num_classes=7
-train_dir='/content/drive/MyDrive/ISIC_2018/s_c_train'
-val_dir= '/content/drive/MyDrive/ISIC_2018/s_c_validation'
-test_dir='/content/drive/MyDrive/ISIC_2018/s_c_test'
+train_dir=r'\train'
+val_dir= r'\val'
+test_dir=r'\test
 
 size=224
 batch_size=32
@@ -176,4 +176,4 @@ plt.title('Confusion Matrix - Validation')
 plt.show()
 #%%
 # Save the model for later use
-model.save(r'C:\Users\Acer\Desktop\DATAsets\ISIC2018\test_train_val\model_EfficientB0_00.h5')
+model.save(r'\model_EfficientB0_00.h5')
