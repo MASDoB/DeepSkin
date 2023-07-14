@@ -6,9 +6,9 @@ from tensorflow.keras.regularizers import l2
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 num_classes=2
-train_dir=r'C:\Users\Acer\Desktop\data_work\2018\test_train_val\bi_mal\train_test_val\train'
-val_dir= r'C:\Users\Acer\Desktop\data_work\2018\test_train_val\bi_mal\train_test_val\val'
-test_dir=r'C:\Users\Acer\Desktop\data_work\2018\test_train_val\bi_mal\train_test_val\test'
+train_dir=r'\train'
+val_dir= r'\val'
+test_dir=r'\test'
 
 size=224
 batch_size=128
@@ -157,4 +157,4 @@ plt.title('Confusion Matrix - Validation')
 plt.show()
 #%%
 # Save the model for later use
-model.save(r'C:\Users\Acer\Desktop\Nouveau dossier (4)\bi64\model_AlexNet_01.h5')
+model.save(r'\model_AlexNet_01.h5')
